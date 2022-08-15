@@ -59,7 +59,7 @@ Crystal Composition Transformer
    └── README.md
 ```
 
-#### Training
+#### How to train the model
 An example is to train a BLMM model on the icsd_mix dataset. 
 ```
 python train.py --train BLMM_dataset/mix_dataset/icsd_train.txt --valid BLMM_dataset/mix_dataset/icsd_valid.txt --root_dir checkpoints/icsd_mix/blm/ \
@@ -67,10 +67,10 @@ python train.py --train BLMM_dataset/mix_dataset/icsd_train.txt --valid BLMM_dat
 ```
 The training for other models is similar to icsd_mix dataset.
 
-#### How to generate new molecules using the trained models
+#### How to generate new hypothesis materials using the trained models
 For all of the following, replace `epoch\=???.ckpt` with the checkpoint saved in training.
 
-Generate molecules using the trained icsd_mix model.
+An example to generate hypothesis materials using the trained icsd_mix model.
 ```
 python test.py --checkpoint checkpoints/icsd_mix/blm/lightning_logs/version_0/checkpoints/epoch\=???.ckpt \
 --sample 1000 --decode sample --output sample.txt
