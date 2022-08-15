@@ -62,8 +62,8 @@ Crystal Composition Transformer
 #### Training
 An example is to train a GMTransformer model on the SMILES_atom dataset. 
 ```
-python train.py --train GMTransformer_dataset/SMILE_data/SMILES_atom_train.txt --valid GMTransformer_dataset/SMILE_data/SMILES_atom_valid.txt --root_dir checkpoints/SMILES/atom/ \
---vocab_size 100 --max_len 200 --model_type blm --share_emb_prj_weight
+python train.py --train BLMM_dataset/mix_dataset/icsd_train.txt --valid BLMM_dataset/mix_dataset/icsd_valid.txt --root_dir checkpoints/icsd_mix/blm/ \
+--vocab_size 130 --max_len 210 --model_type blm --share_emb_prj_weight
 ```
 The training for other models is similar to SMILES_atom dataset.
 
@@ -72,7 +72,7 @@ For all of the following, replace `epoch\=???.ckpt` with the checkpoint saved in
 
 Generate molecules using the trained SMILES_atom model.
 ```
-python test.py --checkpoint checkpoints/SMILES/atom/lightning_logs/version_0/checkpoints/epoch\=???.ckpt \
+python test.py --checkpoint checkpoints/icsd_mix/blm/lightning_logs/version_0/checkpoints/epoch\=???.ckpt \
 --sample 1000 --decode sample --output sample.txt
 ```
 
