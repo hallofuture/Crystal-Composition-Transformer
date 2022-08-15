@@ -19,9 +19,10 @@ The version of Pymagen package: `pip install pymatgen==2021.2.16`
 |-------|----------|----------|--------|-----------|-----------|---------|
 | Total | 52317    | 363182   | 89121  | 39431     | 216540    | 63703   |
 | Train | 50755    | 345022   | 84664  | 37459     | 205713    | 60517   |
-| Valid | 1336     | 9080     | 9080   | 986       | 5413      | 1593    |
-| Test  | 1336     | 9080     | 9080   | 986       | 5413      | 1593    |
+| Valid | 1336     | 9080     | 2228   | 986       | 5413      | 1593    |
+| Test  | 1336     | 9080     | 2228   | 986       | 5413      | 1593    |
 
+All above datasets can be downloaded from [Figshare](https://figshare.com/articles/dataset/BLMM_dataset/20489964)
 
 ### Acknowledgements
 
@@ -33,14 +34,28 @@ We use the blank language model from [https://github.com/Varal7/blank_language_m
 Download datasets from the above link, then unzip it under `BLMM_dataset` folder.
 After the above, the directory should be:
 ```
-GMTransformer
-   ├── GMTransformer_dataset
-       ├── SMILE_data
-           ├── SMILES_atom_train.txt
-           ├── SMILES_atom_valid.txt
-       ├── SELFIES_data
-           ├── SELFIES_atom_train.txt
-           ├── SELFIES_atom_valid.txt
+Crystal Composition Transformer
+   ├── BLMM_dataset
+       ├── mix_dataset
+           ├── icsd_train.txt
+           ├── icsd_valid.txt
+           ├── icsd_test.txt
+           ├── oqmd_train.txt
+           ├── oqmd_valid.txt
+           ├── oqmd_test.txt
+           ├── mp_train.txt
+           ├── mp_valid.txt
+           ├── mp_test.txt
+       ├── pure_dataset
+           ├── icsd_train.txt
+           ├── icsd_valid.txt
+           ├── icsd_test.txt
+           ├── oqmd_train.txt
+           ├── oqmd_valid.txt
+           ├── oqmd_test.txt
+           ├── mp_train.txt
+           ├── mp_valid.txt
+           ├── mp_test.txt
    └── README.md
 ```
 
