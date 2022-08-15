@@ -11,7 +11,7 @@ Install `Pytorch` from [Pytorch web](https://pytorch.org/get-started/previous-ve
 
 The code is based on the [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) framework. It has been tested in `PyTorch 1.6.0`, `PyTorch Lightning 1.0.7`
 
-The version of Pymagen package: `pip install pymatgen==2021.2.16`
+The version of Pymatgen package: `pip install pymatgen==2021.2.16`
 
 ### Datasets for training Crystal Composition Transformer
 
