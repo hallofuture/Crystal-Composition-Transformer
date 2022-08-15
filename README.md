@@ -31,7 +31,7 @@ We use the blank language model from [https://github.com/Varal7/blank_language_m
 ### How to train the model with Crystal Composition Transformer dataset
 
 #### Download Data
-Download datasets from the above link, then unzip it under `BLMM_dataset` folder.
+Download datasets from the above link, then unzip it under `BLMM_dataset.zip` folder.
 After the above, the directory should be:
 ```
 Crystal Composition Transformer
